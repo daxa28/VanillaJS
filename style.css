@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(120deg, #cb11ab 0%, #481173 100%);
+  color: white;
+  min-height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+}
+
+.block-todo,
+.block-users {
+  background: rgba(255, 255, 255, 0.411);
+  max-width: 60%;
+  margin: 10rem auto;
+}
+
+.header {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.todo-input {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  background: white;
+}
+
+.todo-button,
+.user-button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
+  color: #481173;
+  cursor: pointer;
+}
+
+.todo-button:hover {
+  background: #481173;
+  color: white;
+}
+
+.select {
+  margin-left: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  background: #481173;
+  cursor: pointer;
+  pointer-events: none;
+  font-size: 1.5rem;
+}
+
+.todo-filter {
+  appearance: none;
+  border: 0 !important;
+  background-image: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: #481173;
+  cursor: pointer;
+}
+
+.todo-content,
+.user-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todolist,
+.userlist {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo,
+.user {
+  width: 50rem;
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  border: 1px solid white;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  margin: 0.3rem;
+  font-size: 1rem;
+}
+
+.trash-btn {
+  background: #b71c1c;
+}
+
+.complete-btn {
+  background: #388e3c;
+}
+
+.todo-item,
+.user-item {
+  padding: 0 0.5rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
